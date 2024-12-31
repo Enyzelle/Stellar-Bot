@@ -1,0 +1,26 @@
+{
+    "token": "YOUR_BOT_TOKEN",
+    "clientId": "YOUR_CLIENT_ID",
+    "prefix": "!",
+    "embedColor": "#2B2D31",
+    "lavalink": {
+        "nodes": [ 
+            {
+                "host": "localhost",
+                "port": 2333,
+                "password": "youshallnotpass"
+            }
+        ]
+    },
+    "embedColor": "#2B2D31",
+    "owners": ["YOUR_DISCORD_USER_ID"],
+    "presence": {
+        "status": "dnd",
+        "activities": [
+            {
+                "name": "!help | Stellar",
+                "type": "PLAYING"
+            }
+        ]
+    }
+}

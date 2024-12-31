@@ -1,0 +1,63 @@
+{
+  "name": "stellar-bot",
+  "version": "1.0.0",
+  "description": "A powerful Discord music bot with DJ system, moderation, and fun commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enyzelle/Stellar-Bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "music",
+    "discord.js",
+    "moderation",
+    "dj",
+    "stellar"
+  ],
+  "author": {
+    "name": "Enyzelle",
+    "url": "https://github.com/Enyzelle"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enyzelle/Stellar-Bot/issues"
+  },
+  "homepage": "https://github.com/Enyzelle/Stellar-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0",
+    "chalk": "^4.1.2",
+    "lyrics-search": "^1.0.0",
+    "node-fetch": "^2.7.0",
+    "riffy": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.9.0",
+    "npm": ">=7.0.0"
+  },
+  "private": false,
+  "contributors": [
+    {
+      "name": "Enyzelle",
+      "url": "https://github.com/Enyzelle"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Enyzelle"
+  }
+}
