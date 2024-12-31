@@ -252,9 +252,25 @@ If you find this bot helpful, please consider:
 
 ---
 
-<div align="center">
+## 📞 Contact
 
-### Made with ❤️ by Enyzelle
+- 📧 Email: [Enyz](enyz.contact@gmail.com)
+- 📸 IG: [@enyzelle](https://instagram.com/enyzelle)
+- 🤝 Discord: [yz.yuriza](https://discord.com/users/1317482100290752604)
+- 💬 Discord Server: [Join our community](https://discord.gg/ggsas)
+
+---
+
+## 🙏 Acknowledgments
+
+- [Discord.js](https://discord.js.org/) - JavaScript Discord API
+- [discord.py](https://discordpy.readthedocs.io/) - Python Discord API
+- All contributors who help improve this project
+
+---
+<div align="center">
+  Made with ❤️ by Enyzelle
+</div>
 
 <a href="https://discord.gg/your-server">
   <img src="https://img.shields.io/discord/YOUR_SERVER_ID?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
