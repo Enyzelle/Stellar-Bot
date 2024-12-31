@@ -92,7 +92,6 @@ npm start
     "token": "YOUR_BOT_TOKEN",
     "clientId": "YOUR_CLIENT_ID",
     "prefix": "!",
-    "embedColor": "#2B2D31",
     "lavalink": {
         "nodes": [ 
             {
