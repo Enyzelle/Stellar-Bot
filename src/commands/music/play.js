@@ -24,6 +24,9 @@ module.exports = {
         const query = args.join(' ');
         const result = await musicPlayer.play(message, query);
 
+        const searching = `🔎 **Searching...** \`${query}\``
+        message.channel.send(searching)
+
         if (!result.success) {
             return message.reply(result.message);
         }
@@ -32,7 +35,7 @@ module.exports = {
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
                 .setAuthor({ name: `🎵 Added Playlist to Queue` })
-                .setDescription(`Added ${result.tracks.length} tracks from ${result.playlistInfo.name}`)
+                .setDescription(`Added \`${result.tracks.length}\` tracks from [${result.playlistInfo.name}](${query})`)
                 .setTimestamp()
                 .setFooter({ 
                     text: `Requested by ${message.author.tag}`,

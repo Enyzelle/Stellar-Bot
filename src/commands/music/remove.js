@@ -29,7 +29,7 @@ module.exports = {
         const removed = player.queue.remove(position - 1);
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setDescription(`🗑️ Removed from queue: **${removed.title}**`)
+            .setDescription(`🗑️ Removed from queue: **${removed.track.info.title}**`)
             .setFooter({ 
                 text: `Removed by DJ ${message.author.tag} | By Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })

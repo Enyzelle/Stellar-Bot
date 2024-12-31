@@ -32,7 +32,7 @@ module.exports = {
                 { name: 'Total Songs', value: queue.length.toString(), inline: true }
             )
             .setFooter({ 
-                text: `Page ${page} of ${Math.ceil(queue.length / multiple)}`,
+                text: `Page ${page} of ${Math.ceil(queue.length / multiple)} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

@@ -65,7 +65,7 @@ module.exports = {
                     )
                     .setTimestamp()
                     .setFooter({ 
-                        text: `Queue Length: ${player.queue.length} tracks`, 
+                        text: `Queue Length: ${player.queue.length} tracks | By: Enyzelle`, 
                         iconURL: client.user.displayAvatarURL() 
                     });
 

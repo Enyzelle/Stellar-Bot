@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'nowplaying',
@@ -19,12 +20,13 @@ module.exports = {
         const progress = createProgressBar(position, duration);
 
         const embed = new EmbedBuilder()
-            .setColor('#00ff00')
+            .setColor(embedColor)
             .setAuthor({ name: `🎵 Now Playing` })
-            .setDescription(`[${track.info.title}](${track.info.uri})`)
+            .setDescription(`**[${track.info.title}](${track.info.uri})**`)
+            .setThumbnail(track.info.thumbnail)
             .addFields(
                 { name: 'Author', value: track.info.author, inline: true },
-                { name: 'Requested By', value: track.info.requester.tag, inline: true },
+                { name: 'Requested By', value: `<@${track.info.requester.tag}>`, inline: true },
                 { name: 'Progress', value: `${progress}\n\`${formatTime(position)} / ${formatTime(duration)}\``, inline: false }
             )
             .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });

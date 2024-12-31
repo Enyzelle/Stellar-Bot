@@ -30,9 +30,9 @@ module.exports = {
                 .setColor(embedColor)
                 .setColor({ name: `⏰ Member Timed Out` })
                 .addFields(
-                    { name: 'Member', value: target.user.tag, inline: true },
+                    { name: 'Member', value: `<@${target.user.id}>`, inline: true },
                     { name: 'Duration', value: duration, inline: true },
-                    { name: 'Moderator', value: message.author.tag, inline: true },
+                    { name: 'Moderator', value: `<@${message.author.id}>`, inline: true },
                     { name: 'Reason', value: reason }
                 )
                 .setTimestamp();

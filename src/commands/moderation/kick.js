@@ -27,8 +27,8 @@ module.exports = {
                 .setColor(embedColor)
                 .setAuthor({ name: `👢 Member Kicked` })
                 .addFields(
-                    { name: 'Member', value: target.user.tag, inline: true },
-                    { name: 'Moderator', value: message.author.tag, inline: true },
+                    { name: 'Member', value: `<@${target.user.id}>`, inline: true },
+                    { name: 'Moderator', value: `<@${message.author.id}>`, inline: true },
                     { name: 'Reason', value: reason }
                 )
                 .setTimestamp()
