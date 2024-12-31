@@ -10,10 +10,10 @@ module.exports = {
         
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setTitle(`${target.tag}'s Avatar`)
+            .setAuthor({ name: `${target.tag}'s Avatar` })
             .setImage(target.displayAvatarURL({ dynamic: true, size: 4096 }))
             .setFooter({ 
-                text: `Requested by ${message.author.tag}`,
+                text: `Requested by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'roll',
@@ -13,14 +14,14 @@ module.exports = {
         const result = Math.floor(Math.random() * sides) + 1;
         
         const embed = new EmbedBuilder()
-            .setColor('#FF69B4')
-            .setTitle('🎲 Dice Roll')
+            .setColor(embedColor)
+            .setAuthor({ name: `🎲 Dice Roll` })
             .setDescription(`Rolling a ${sides}-sided dice...`)
             .addFields(
                 { name: 'Result', value: `**${result}**` }
             )
             .setFooter({ 
-                text: `Rolled by ${message.author.tag}`,
+                text: `Rolled by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

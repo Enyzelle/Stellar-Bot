@@ -21,13 +21,14 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor(result.color)
-            .setTitle('Rock, Paper, Scissors')
+            .setAuthor({ name: `Rock, Paper, Scissors` })
             .addFields(
                 { name: 'Your Choice', value: `${emojis[userChoice]} ${userChoice}`, inline: true },
                 { name: 'Bot Choice', value: `${emojis[botChoice]} ${botChoice}`, inline: true },
                 { name: 'Result', value: result.message }
             )
-            .setTimestamp();
+            .setTimestamp()
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

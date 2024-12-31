@@ -12,7 +12,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor(role.color || embedColor)
-            .setTitle('Role Information')
+            .setAuthor({ name: `Role Information` })
             .addFields(
                 { name: '📛 Name', value: role.name, inline: true },
                 { name: '🆔 ID', value: role.id, inline: true },

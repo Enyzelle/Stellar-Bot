@@ -25,7 +25,7 @@ module.exports = {
             
             const embed = new EmbedBuilder()
                 .setColor('Green')
-                .setTitle('DJ Role Set')
+                .setAuthor({ name: `DJ Role Set` })
                 .setDescription(`Successfully set ${role} as the DJ role!`)
                 .setTimestamp();
 
@@ -36,9 +36,10 @@ module.exports = {
             
             const embed = new EmbedBuilder()
                 .setColor('Red')
-                .setTitle('DJ Role Removed')
+                .setAuthor({ name: `DJ Role Removed` })
                 .setDescription('DJ role requirement has been removed.')
-                .setTimestamp();
+                .setTimestamp()
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             message.channel.send({ embeds: [embed] });
         }
@@ -48,11 +49,12 @@ module.exports = {
             
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('DJ Role Information')
+                .setAuthor({ name: `DJ Role Information` })
                 .setDescription(djRole 
                     ? `Current DJ role: ${djRole}`
                     : 'No DJ role set - anyone can use music commands!')
-                .setTimestamp();
+                .setTimestamp()
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             message.channel.send({ embeds: [embed] });
         }

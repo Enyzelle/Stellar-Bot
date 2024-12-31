@@ -43,8 +43,8 @@ module.exports = {
             try {
                 const embed = new EmbedBuilder()
                     .setColor(embedColor)
-                    .setTitle('🎵 Now Playing')
-                    .setDescription(`[${track.info.title}](${track.info.uri})`)
+                    .setAuthor({ name: `🎵 Now Playing` })
+                    .setDescription(`**[${track.info.title}](${track.info.uri})**`)
                     .setThumbnail(track.info.thumbnail || null)
                     .addFields(
                         { 
@@ -54,12 +54,12 @@ module.exports = {
                         },
                         { 
                             name: '⏱️ Duration', 
-                            value: formatTime(track.info.length),
+                            value: `\`${formatTime(track.info.length)}\``,
                             inline: true 
                         },
                         { 
                             name: '🎧 Requested By', 
-                            value: track.info.requester.tag,
+                            value: `<@${track.info.requester.id}>`,
                             inline: true 
                         }
                     )

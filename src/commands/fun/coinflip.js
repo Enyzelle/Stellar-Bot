@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'coinflip',
@@ -9,12 +10,12 @@ module.exports = {
         const emoji = result === 'Heads' ? '🪙' : '💿';
 
         const embed = new EmbedBuilder()
-            .setColor('#FFD700')
-            .setTitle('Coin Flip')
+            .setColor(embedColor)
+            .setAuthor({ name: `🪙 Coin Flip` })
             .setDescription(`${emoji} The coin landed on: **${result}**!`)
             .setTimestamp()
             .setFooter({ 
-                text: `Flipped by ${message.author.tag}`,
+                text: `Flipped by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

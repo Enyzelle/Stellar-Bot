@@ -22,7 +22,7 @@ module.exports = {
         const tracks = queue.slice(start, end);
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setTitle('🎵 Queue')
+            .setAuthor({ name: `🎵 Queue` })
             .setDescription(tracks.map((track, i) => 
                 `**${start + (i + 1)}.** [${track.info.title}](${track.info.uri}) - ${track.info.author}`
             ).join('\n'))

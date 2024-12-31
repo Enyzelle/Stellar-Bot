@@ -1,4 +1,5 @@
 const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'timeout',
@@ -26,8 +27,8 @@ module.exports = {
             await target.timeout(durationMs, reason);
             
             const embed = new EmbedBuilder()
-                .setColor('Yellow')
-                .setTitle('⏰ Member Timed Out')
+                .setColor(embedColor)
+                .setColor({ name: `⏰ Member Timed Out` })
                 .addFields(
                     { name: 'Member', value: target.user.tag, inline: true },
                     { name: 'Duration', value: duration, inline: true },

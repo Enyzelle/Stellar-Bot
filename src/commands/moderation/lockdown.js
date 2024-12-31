@@ -20,9 +20,10 @@ module.exports = {
 
             const embed = new EmbedBuilder()
                 .setColor(state === 'on' ? 'Red' : 'Green')
-                .setTitle(`🔒 Channel ${state === 'on' ? 'Locked' : 'Unlocked'}`)
+                .setAuthor({ name: `🔒 Channel ${state === 'on' ? 'Locked' : 'Unlocked'}` })
                 .setDescription(`This channel has been ${state === 'on' ? 'locked' : 'unlocked'} by ${message.author.tag}`)
-                .setTimestamp();
+                .setTimestamp()
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             message.channel.send({ embeds: [embed] });
         } catch (error) {

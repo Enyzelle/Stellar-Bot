@@ -8,11 +8,12 @@ module.exports = {
         
         const embed = new EmbedBuilder()
             .setColor('#00ff00')
-            .setTitle('🏓 Pong!')
+            .setAuthor({ name: `🏓 Pong!` })
             .addFields(
                 { name: 'Bot Latency', value: `${sent.createdTimestamp - message.createdTimestamp}ms`, inline: true },
                 { name: 'API Latency', value: `${Math.round(client.ws.ping)}ms`, inline: true }
-            );
+            )
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         sent.edit({ content: null, embeds: [embed] });
     }

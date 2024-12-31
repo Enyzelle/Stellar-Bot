@@ -30,7 +30,7 @@ module.exports = {
             .setDescription(`⏭️ Skipped: **${currentTrack.info.title}**`)
             .setTimestamp()
             .setFooter({ 
-                text: `Skipped by ${message.author.tag}`,
+                text: `Skipped by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

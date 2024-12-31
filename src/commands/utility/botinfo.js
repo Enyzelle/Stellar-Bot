@@ -10,7 +10,7 @@ module.exports = {
     execute(message, args, client) {
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setTitle('Bot Information')
+            .setAuthor({ name: `Bot Information` })
             .addFields(
                 { name: '🤖 Bot Name', value: client.user.tag, inline: true },
                 { name: '📊 Servers', value: client.guilds.cache.size.toString(), inline: true },
@@ -23,7 +23,8 @@ module.exports = {
                 { name: '⏰ Uptime', value: formatUptime(client.uptime), inline: true }
             )
             .setThumbnail(client.user.displayAvatarURL())
-            .setTimestamp();
+            .setTimestamp()
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

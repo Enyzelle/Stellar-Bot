@@ -13,7 +13,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor(target.displayHexColor)
-            .setTitle('User Information')
+            .setAuthor({ name: `User Information` })
             .setThumbnail(target.user.displayAvatarURL({ dynamic: true, size: 1024 }))
             .addFields(
                 { name: '👤 Username', value: target.user.tag, inline: true },
@@ -24,7 +24,7 @@ module.exports = {
                 { name: `📋 Roles [${roles.length}]`, value: roles.length ? roles.join(', ') : 'None' }
             )
             .setFooter({ 
-                text: `Requested by ${message.author.tag}`,
+                text: `Requested by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             })
             .setTimestamp();

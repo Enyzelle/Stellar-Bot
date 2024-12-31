@@ -21,10 +21,10 @@ module.exports = {
         
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setTitle('⏱️ Slowmode Updated')
+            .setAuthor({ name: `⏱️ Slowmode Updated` })
             .setDescription(`Slowmode has been set to ${time} seconds`)
             .setFooter({ 
-                text: `Set by ${message.author.tag}`,
+                text: `Set by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

@@ -14,7 +14,7 @@ module.exports = {
             .setURL(data.postLink)
             .setImage(data.url)
             .setFooter({ 
-                text: `👍 ${data.ups} | From r/${data.subreddit}`,
+                text: `👍 ${data.ups} | From r/${data.subreddit} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

@@ -1,4 +1,5 @@
 const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'kick',
@@ -23,14 +24,15 @@ module.exports = {
             await target.kick(reason);
             
             const embed = new EmbedBuilder()
-                .setColor('Orange')
-                .setTitle('👢 Member Kicked')
+                .setColor(embedColor)
+                .setAuthor({ name: `👢 Member Kicked` })
                 .addFields(
                     { name: 'Member', value: target.user.tag, inline: true },
                     { name: 'Moderator', value: message.author.tag, inline: true },
                     { name: 'Reason', value: reason }
                 )
-                .setTimestamp();
+                .setTimestamp()
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             message.channel.send({ embeds: [embed] });
         } catch (error) {

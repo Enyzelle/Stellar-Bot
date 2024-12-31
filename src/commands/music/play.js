@@ -31,7 +31,7 @@ module.exports = {
         if (result.playlist) {
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('🎵 Added Playlist to Queue')
+                .setAuthor({ name: `🎵 Added Playlist to Queue` })
                 .setDescription(`Added ${result.tracks.length} tracks from ${result.playlistInfo.name}`)
                 .setTimestamp()
                 .setFooter({ 
@@ -45,16 +45,16 @@ module.exports = {
         // Create embed without thumbnail first
         const embed = new EmbedBuilder()
             .setColor(embedColor)
-            .setTitle('🎵 Added to Queue')
+            .setAuthor({ name: `🎵 Added to Queue` })
             // .setThumbnail(result.track.info.thumbnail)
-            .setDescription(`[${result.track.info.title}](${result.track.info.uri})`)
+            .setDescription(`**[${result.track.info.title}](${result.track.info.uri})**`)
             .addFields(
                 { name: '👤 Artist', value: result.track.info.author, inline: true },
-                { name: '⏱️ Duration', value: formatTime(result.track.info.length), inline: true }
+                { name: '⏱️ Duration', value: `\`${formatTime(result.track.info.length)}\``, inline: true }
             )
             .setTimestamp()
             .setFooter({ 
-                text: `Requested by ${message.author.tag}`,
+                text: `Requested by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

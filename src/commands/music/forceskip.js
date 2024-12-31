@@ -27,7 +27,8 @@ module.exports = {
             .setFooter({ 
                 text: `Force skipped by DJ ${message.author.tag}`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
-            });
+            })
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

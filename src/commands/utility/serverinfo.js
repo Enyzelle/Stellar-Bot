@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js');
+const { embedColor } = require('../../../config.json');
 
 module.exports = {
     name: 'serverinfo',
@@ -7,8 +8,8 @@ module.exports = {
     execute(message, args, client) {
         const guild = message.guild;
         const embed = new EmbedBuilder()
-            .setColor('#00ff00')
-            .setTitle(`${guild.name} Server Information`)
+            .setColor(embedColor)
+            .setAuthor({ name: `${guild.name} Server Information` })
             .setThumbnail(guild.iconURL({ dynamic: true }))
             .addFields(
                 { name: 'Owner', value: `<@${guild.ownerId}>`, inline: true },
@@ -20,7 +21,7 @@ module.exports = {
                 { name: 'Roles', value: guild.roles.cache.size.toString(), inline: true },
                 { name: 'Emojis', value: guild.emojis.cache.size.toString(), inline: true }
             )
-            .setFooter({ text: `ID: ${guild.id}` });
+            .setFooter({ text: `ID: ${guild.id} | By: Enyzelle` });
 
         message.channel.send({ embeds: [embed] });
     }

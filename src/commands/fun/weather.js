@@ -23,7 +23,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle(`🌤️ Weather in ${data.location.name}`)
+                .setAuthor({ name: `🌤️ Weather in ${data.location.name}` })
                 .setThumbnail(`https:${data.current.condition.icon}`)
                 .addFields(
                     { name: 'Condition', value: data.current.condition.text, inline: true },
@@ -33,7 +33,8 @@ module.exports = {
                     { name: 'Wind', value: `${data.current.wind_kph} km/h`, inline: true },
                     { name: 'Last Updated', value: data.current.last_updated, inline: true }
                 )
-                .setTimestamp();
+                .setTimestamp()
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             message.channel.send({ embeds: [embed] });
         } catch (error) {

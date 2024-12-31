@@ -50,7 +50,7 @@ module.exports = {
             // Create embed for first chunk
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle(`📜 Lyrics for ${title}`)
+                .setAuthor({ name: `📜 Lyrics for ${title}` })
                 .setDescription(lyricsChunks[0])
                 .setFooter({ 
                     text: `Requested by ${message.author.tag} | Page 1/${lyricsChunks.length}`,

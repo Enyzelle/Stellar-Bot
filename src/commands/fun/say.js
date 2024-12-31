@@ -1,4 +1,5 @@
 const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
+const { embedColor } = require('../../../config.json')
 
 module.exports = {
     name: 'say',
@@ -18,10 +19,10 @@ module.exports = {
         const text = args.join(' ');
         
         const embed = new EmbedBuilder()
-            .setColor('#00ff00')
+            .setColor(embedColor)
             .setDescription(text)
             .setFooter({ 
-                text: `Requested by ${message.author.tag}`,
+                text: `Requested by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

@@ -40,14 +40,15 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor('Red')
-            .setTitle('⚠️ Member Warned')
+            .setAuthor({ name: `⚠️ Member Warned` })
             .addFields(
                 { name: 'Member', value: target.user.tag, inline: true },
                 { name: 'Moderator', value: message.author.tag, inline: true },
                 { name: 'Reason', value: reason },
                 { name: 'Total Warnings', value: warns[message.guild.id][target.id].length.toString() }
             )
-            .setTimestamp();
+            .setTimestamp()
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

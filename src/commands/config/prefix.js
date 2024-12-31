@@ -19,12 +19,13 @@ module.exports = {
         if (!args.length) {
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('⚙️ Server Prefix')
+                .setAuthor({ name: `⚙️ Server Prefix` })
                 .setDescription(`Current prefix is: \`${currentPrefix}\``)
                 .addFields(
                     { name: 'Change Prefix', value: `${currentPrefix}prefix <new_prefix>`, inline: true },
                     { name: 'Reset Prefix', value: `${currentPrefix}prefix reset`, inline: true }
-                );
+                )
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             return message.channel.send({ embeds: [embed] });
         }
@@ -36,10 +37,10 @@ module.exports = {
             const resetPrefix = prefixManager.resetPrefix(message.guild.id);
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('⚙️ Prefix Reset')
+                .setAuthor({ name: `⚙️ Prefix Reset` })
                 .setDescription(`Server prefix has been reset to: \`${resetPrefix}\``)
                 .setFooter({ 
-                    text: `Reset by ${message.author.tag}`,
+                    text: `Reset by ${message.author.tag} | By: Enyzelle`,
                     iconURL: message.author.displayAvatarURL({ dynamic: true })
                 });
 
@@ -50,13 +51,14 @@ module.exports = {
         if (subCommand === 'show' || subCommand === 'info') {
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('⚙️ Prefix Information')
+                .setAuthor({ name: `⚙️ Prefix Information` })
                 .addFields(
                     { name: 'Current Prefix', value: `\`${currentPrefix}\``, inline: true },
                     { name: 'Default Prefix', value: `\`${defaultPrefix}\``, inline: true },
                     { name: 'Max Length', value: '3 characters', inline: true },
                     { name: 'Blacklisted Characters', value: prefixManager.blacklistedPrefixes.join(' ') }
-                );
+                )
+                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
             return message.channel.send({ embeds: [embed] });
         }
@@ -69,14 +71,14 @@ module.exports = {
 
             const embed = new EmbedBuilder()
                 .setColor(embedColor)
-                .setTitle('⚙️ Prefix Updated')
+                .setAuthor({ name: `⚙️ Prefix Updated` })
                 .setDescription(`Server prefix has been changed to: \`${newPrefix}\``)
                 .addFields(
                     { name: 'Example', value: `${newPrefix}play`, inline: true },
                     { name: 'Reset Command', value: `${newPrefix}prefix reset`, inline: true }
                 )
                 .setFooter({ 
-                    text: `Changed by ${message.author.tag}`,
+                    text: `Changed by ${message.author.tag} | By: Enyzelle`,
                     iconURL: message.author.displayAvatarURL({ dynamic: true })
                 })
                 .setTimestamp();

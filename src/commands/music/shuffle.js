@@ -27,7 +27,7 @@ module.exports = {
             .setColor(embedColor)
             .setDescription('🔀 Queue has been shuffled!')
             .setFooter({ 
-                text: `Shuffled by ${message.author.tag}`,
+                text: `Shuffled by ${message.author.tag} | By: Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

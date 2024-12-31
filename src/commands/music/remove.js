@@ -31,7 +31,7 @@ module.exports = {
             .setColor(embedColor)
             .setDescription(`🗑️ Removed from queue: **${removed.title}**`)
             .setFooter({ 
-                text: `Removed by DJ ${message.author.tag}`,
+                text: `Removed by DJ ${message.author.tag} | By Enyzelle`,
                 iconURL: message.author.displayAvatarURL({ dynamic: true })
             });
 

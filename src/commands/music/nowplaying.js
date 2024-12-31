@@ -20,13 +20,14 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor('#00ff00')
-            .setTitle('🎵 Now Playing')
+            .setAuthor({ name: `🎵 Now Playing` })
             .setDescription(`[${track.info.title}](${track.info.uri})`)
             .addFields(
                 { name: 'Author', value: track.info.author, inline: true },
                 { name: 'Requested By', value: track.info.requester.tag, inline: true },
                 { name: 'Progress', value: `${progress}\n\`${formatTime(position)} / ${formatTime(duration)}\``, inline: false }
-            );
+            )
+            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

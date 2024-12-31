@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, GatewayDispatchEvents } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, GatewayDispatchEvents } = require('discord.js');
 const { Riffy } = require('riffy');
 const { token, lavalink: { nodes } } = require('./config.json');
 const fs = require('fs');
@@ -16,6 +16,7 @@ const client = new Client({
 });
 
 client.commands = new Map();
+client.commands = new Collection();
 client.aliases = new Map();
 
 // Initialize Riffy
