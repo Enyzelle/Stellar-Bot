@@ -244,12 +244,6 @@ If you find this bot helpful, please consider:
 - Joining our [support server](https://discord.gg/your-server)
 - Contributing to its development
 
-## 📞 Contact
-
-- Discord: Your Discord Tag
-- Email: your.email@example.com
-- Twitter: [@yourusername](https://twitter.com/yourusername)
-
 ---
 
 ## 📞 Contact
@@ -264,7 +258,7 @@ If you find this bot helpful, please consider:
 ## 🙏 Acknowledgments
 
 - [Discord.js](https://discord.js.org/) - JavaScript Discord API
-- [discord.py](https://discordpy.readthedocs.io/) - Python Discord API
+- [Riffy](https://github.com/riffy-team/riffy) - Riffy API
 - All contributors who help improve this project
 
 ---
