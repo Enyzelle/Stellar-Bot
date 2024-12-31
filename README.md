@@ -97,7 +97,8 @@ npm start
             {
                 "host": "localhost",
                 "port": 2333,
-                "password": "youshallnotpass"
+                "password": "youshallnotpass",
+                "secure": false
             }
         ]
     },
