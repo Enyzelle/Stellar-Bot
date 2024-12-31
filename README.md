@@ -269,6 +269,8 @@ If you find this bot helpful, please consider:
 
 ---
 <div align="center">
+  
+<div align="center">
   Made with ❤️ by Enyzelle
 </div>
 
