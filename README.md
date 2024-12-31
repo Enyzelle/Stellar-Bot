@@ -213,6 +213,8 @@ npm start
 <div align="center">
 <img src="assets/img/showcase1.png" alt="Music Player" width="400"/>
 <img src="assets/img/showcase2.png" alt="Moderation" width="400"/>
+<img src="assets/img/showcase3.png" alt="Configuration" width="400"/>
+<img src="assets/img/showcase4.png" alt="Fun" width="400"/>
 </div>
 
 ## 🤝 Contributing
