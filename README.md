@@ -254,7 +254,7 @@ If you find this bot helpful, please consider:
 
 <div align="center">
 
-### Made with ❤️ by [Your Name]
+### Made with ❤️ by Enyzelle
 
 <a href="https://discord.gg/your-server">
   <img src="https://img.shields.io/discord/YOUR_SERVER_ID?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
