@@ -211,8 +211,8 @@ npm start
 ## 🎨 Features Showcase
 
 <div align="center">
-<img src="assets/showcase1.png" alt="Music Player" width="400"/>
-<img src="assets/showcase2.png" alt="Moderation" width="400"/>
+<img src="assets/img/showcase1.png" alt="Music Player" width="400"/>
+<img src="assets/img/showcase2.png" alt="Moderation" width="400"/>
 </div>
 
 ## 🤝 Contributing
