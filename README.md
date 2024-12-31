@@ -10,9 +10,9 @@
 [![Stars](https://img.shields.io/github/stars/Enyzelle/stellar-bot?style=social)](https://github.com/yourusername/stellar-bot/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-v16+-green.svg?logo=node.js&logoColor=white)](https://nodejs.org)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yourusername/stellar-bot/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Enyzelle/stellar-bot/graphs/commit-activity)
 
-[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands) • [Support Server](https://discord.gg/your-server) • [Documentation](https://github.com/yourusername/stellar-bot/wiki)
+[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands) • [Support Server](https://discord.gg/your-server) • [Documentation](https://github.com/Enyzelle/stellar-bot/wiki)
 
 </div>
 
