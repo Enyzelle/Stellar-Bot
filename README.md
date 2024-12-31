@@ -2,7 +2,7 @@
 
 # 🌟 Stellar Music Bot
 
-<img src="assets/logo.png" alt="Stellar Bot Logo" width="200"/>
+<img src="assets/img/logo.png" alt="Stellar Bot Logo" width="200"/>
 
 *A powerful Discord music bot with DJ system, moderation, and fun commands!*
 
@@ -12,7 +12,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v16+-green.svg?logo=node.js&logoColor=white)](https://nodejs.org)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Enyzelle/stellar-bot/graphs/commit-activity)
 
-[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands) • [Support Server](https://discord.gg/your-server) • [Documentation](https://github.com/Enyzelle/stellar-bot/wiki)
+[Invite Bot](https://discord.com/oauth2/authorize?client_id=1323186196289163284&scope=bot&permissions=416619490374) • [Support Server](https://discord.gg/your-server) • [Documentation](https://github.com/Enyzelle/stellar-bot/wiki)
 
 </div>
 
