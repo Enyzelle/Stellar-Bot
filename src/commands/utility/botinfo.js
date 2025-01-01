@@ -20,7 +20,8 @@ module.exports = {
                 { name: '📡 Node.js', value: process.version, inline: true },
                 { name: '💾 Memory', value: `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, inline: true },
                 { name: '💻 Platform', value: os.platform(), inline: true },
-                { name: '⏰ Uptime', value: formatUptime(client.uptime), inline: true }
+                { name: '⏰ Uptime', value: formatUptime(client.uptime), inline: true },
+                { name: '💜 Made by', value: '[Enyzelle](https://github.com/Enyzelle)', inline: true }
             )
             .setThumbnail(client.user.displayAvatarURL())
             .setTimestamp()

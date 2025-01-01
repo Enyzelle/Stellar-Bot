@@ -58,7 +58,7 @@ module.exports = {
                     { name: 'Max Length', value: '3 characters', inline: true },
                     { name: 'Blacklisted Characters', value: prefixManager.blacklistedPrefixes.join(' ') }
                 )
-                .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
+                .setFooter({ text: `By Enyzelle`, iconURL: message.client.user.displayAvatarURL({ dynamic: true }) });
 
             return message.channel.send({ embeds: [embed] });
         }

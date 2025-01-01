@@ -28,7 +28,7 @@ module.exports = {
                 { name: 'Result', value: result.message }
             )
             .setTimestamp()
-            .setFooter({ text: `By Enyzelle`, iconURL: client.user.displayAvatarURL({ dynamic: true }) });
+            .setFooter({ text: `By Enyzelle`, iconURL: message.client.user.displayAvatarURL({ dynamic: true }) });
 
         message.channel.send({ embeds: [embed] });
     }

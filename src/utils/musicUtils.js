@@ -12,13 +12,16 @@ class MusicPlayer {
                 return { success: false, message: 'You must be in a voice channel!' };
             }
 
-            // Create a player
-            const player = this.client.riffy.createConnection({
-                guildId: message.guild.id,
-                voiceChannel: message.member.voice.channel.id,
-                textChannel: message.channel.id,
-                deaf: true,
-            });
+            let player = this.client.riffy.players.get(message.guild.id);
+            
+            if (!player) {
+                player = await this.client.riffy.createConnection({
+                    guildId: message.guild.id,
+                    voiceChannel: message.member.voice.channel.id,
+                    textChannel: message.channel.id,
+                    deaf: true,
+                });
+            }
 
             const resolve = await this.client.riffy.resolve({
                 query: query,
@@ -28,12 +31,14 @@ class MusicPlayer {
             const { loadType, tracks, playlistInfo } = resolve;
 
             if (loadType === "playlist") {
-                for (const track of resolve.tracks) {
-                    track.info.requester = message.author;
+                for (const track of tracks) {
                     player.queue.add(track);
                 }
 
-                if (!player.playing && !player.paused) player.play();
+                if (!player.playing) {
+                    await player.play();
+                }
+
                 return { 
                     success: true, 
                     playlist: true, 
@@ -42,13 +47,14 @@ class MusicPlayer {
                 };
 
             } else if (loadType === "search" || loadType === "track") {
-                const track = tracks.shift();
-                track.info.requester = message.author;
-
+                const track = tracks[0];
                 player.queue.add(track);
-                if (!player.playing && !player.paused) player.play();
-                return { success: true, track: track };
 
+                if (!player.playing) {
+                    await player.play();
+                }
+
+                return { success: true, track: track };
             } else {
                 return { success: false, message: "No results found." };
             }
@@ -63,28 +69,41 @@ class MusicPlayer {
         return this.client.riffy.players.get(guild.id);
     }
 
-    setVolume(player, volume) {
-        return player.setVolume(volume);
+    async setVolume(player, volume) {
+        if (player) {
+            await player.setVolume(volume);
+        }
     }
 
-    stop(player) {
-        return player.stop();
+    async stop(player) {
+        if (player) {
+            player.queue.clear();
+            await player.destroy();
+        }
     }
 
-    pause(player) {
-        return player.pause(true);
+    async pause(player) {
+        if (player && !player.paused) {
+            await player.pause();
+        }
     }
 
-    resume(player) {
-        return player.pause(false);
+    async resume(player) {
+        if (player && player.paused) {
+            await player.resume();
+        }
     }
 
-    skip(player) {
-        return player.stop();
+    async skip(player) {
+        if (player) {
+            await player.stop(); // This will trigger trackEnd event and play next song
+        }
     }
 
     shuffle(player) {
-        return player.queue.shuffle();
+        if (player && player.queue.length > 0) {
+            player.queue.shuffle();
+        }
     }
 }
 
