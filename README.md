@@ -137,7 +137,6 @@ npm start
 | `nowplaying` | View currently playing song | `!nowplaying` |
 | `loop` | Loop the current track | `!loop <on/off>` |
 | `lyrics` | Get song lyrics | `!lyrics [song]` |
-| `dj` | Manage DJ role | `!dj <set/remove/info> [@role]` |
 
 </details>
 
@@ -192,6 +191,7 @@ npm start
 | Command | Description | Usage |
 |---------|-------------|--------|
 | `prefix` | Change server prefix | `!prefix <new_prefix>` |
+| `dj` | Manage DJ role | `!dj <set/remove/info> [@role]` |
 
 </details>
 
