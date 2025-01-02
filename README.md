@@ -12,7 +12,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v16+-green.svg?logo=node.js&logoColor=white)](https://nodejs.org)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Enyzelle/stellar-bot/graphs/commit-activity)
 
-[Invite Bot](https://discord.com/oauth2/authorize?client_id=1323186196289163284&scope=bot&permissions=416619490374) • [Support Server](https://discord.gg/your-server) • [Documentation](https://github.com/Enyzelle/stellar-bot/wiki)
+[Invite Bot](https://discord.com/oauth2/authorize?client_id=1323186196289163284&scope=bot&permissions=416619490374) • [Support Server](https://discord.gg/7YkWDEgdr9) • [Documentation](https://github.com/Enyzelle/stellar-bot/wiki)
 
 </div>
 
@@ -243,7 +243,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this bot helpful, please consider:
 - Giving it a ⭐ star on GitHub
-- Joining our [support server](https://discord.gg/your-server)
+- Joining our [support server](https://discord.gg/https://discord.gg/7YkWDEgdr9)
 - Contributing to its development
 
 ---
@@ -253,7 +253,7 @@ If you find this bot helpful, please consider:
 - 📧 Email: [Enyz](enyz.contact@gmail.com)
 - 📸 IG: [@enyzelle](https://instagram.com/enyzelle)
 - 🤝 Discord: [yz.yuriza](https://discord.com/users/1317482100290752604)
-- 💬 Discord Server: [Join our community](https://discord.gg/ggsas)
+- 💬 Discord Server: [Join our community](https://discord.gg/7YkWDEgdr9)
 
 ---
 
@@ -270,7 +270,7 @@ If you find this bot helpful, please consider:
   Made with ❤️ by Enyzelle
 </div>
 
-<a href="https://discord.gg/your-server">
+<a href="https://discord.gg/https://discord.gg/7YkWDEgdr9">
   <img src="https://img.shields.io/discord/YOUR_SERVER_ID?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
 </a>
 
