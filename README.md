@@ -243,7 +243,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this bot helpful, please consider:
 - Giving it a ⭐ star on GitHub
-- Joining our [support server](https://discord.gg/https://discord.gg/7YkWDEgdr9)
+- Joining our [support server](https://discord.gg/7YkWDEgdr9)
 - Contributing to its development
 
 ---
@@ -270,7 +270,7 @@ If you find this bot helpful, please consider:
   Made with ❤️ by Enyzelle
 </div>
 
-<a href="https://discord.gg/https://discord.gg/7YkWDEgdr9">
+<a href="https://discord.gg/7YkWDEgdr9">
   <img src="https://img.shields.io/discord/YOUR_SERVER_ID?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
 </a>
 
