@@ -271,7 +271,7 @@ If you find this bot helpful, please consider:
 </div>
 
 <a href="https://discord.gg/7YkWDEgdr9">
-  <img src="https://img.shields.io/discord/YOUR_SERVER_ID?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
+  <img src="https://img.shields.io/discord/1323234949481893908?color=7289da&logo=discord&logoColor=white" alt="Discord Server">
 </a>
 
 </div>
